@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const produits = ref([
+  { nom: "premier", prix: 1 }, // Index 0
+  { nom: "deux", prix: 2 },    // Index 1
+  { nom: "trois", prix: 3 },   // Index 2
+]);
+
+const xx = 1;
+
+// produits.value[xx] récupère l'élément à l'index 1
+const resultat = produits.value[xx];
+
+console.log(resultat); // { nom: "deux", prix: 2 }
+
+    </script>
+</body>
+</html>
